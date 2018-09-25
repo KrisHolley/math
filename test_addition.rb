@@ -14,4 +14,10 @@ class My_test < Minitest::Test
 	def test_three
 		assert_equal(3,add(2,1))
 	end
+	def test_negitive_five
+		num1 = 5
+		num2 = -15
+		results=add(num1,num2)
+		assert_equal(-10,results)
+	end
 end
